@@ -1,0 +1,89 @@
+/**
+ * map.scss
+ */
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900&display=swap');
+
+body {
+  background: #eee;
+  color:#333;
+  font-family:arial, sans serif;
+}
+
+a {
+  text-decoration:none;
+  color:#386FA4;
+  font-weight:bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#mapbg {
+  background-image:url(https://cdn.discordapp.com/attachments/442879098591772682/456687243877416986/mad-lads-world-map.png);
+  background-color: #333;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:800px;
+  background-position: center; 
+  background-size: cover;
+}
+
+#mapbg table {
+  width: 100%;
+  color:#fff;
+  border-collapse: collapse;
+  empty-cells: hide;
+}
+
+#mapbg table, th, td {
+  border: 0px solid black;
+}
+
+#mapbg td {
+  height: 100px;
+  width:100px;
+  text-align:center;
+}
+
+/* INTERACTIVE MAP */
+.location {
+  height:100%;
+  width:100%;
+  line-height:100px;
+}
+
+.location a {
+  text-transform:uppercase;
+}
+
+.location span {
+  overflow:auto;
+  opacity: 0;
+  text-transform: lowercase;
+  position: absolute;
+  text-align:justify;
+  height: 0px;
+  width:0px;
+  margin-top:20px;
+  margin-left:30px;
+  display: block;
+  color: #212121;
+  background-color:#fff;
+  border: 1px solid #212121;
+  font-size: 10px;
+  line-height: 120%;
+  padding: 5px 10px 5px 10px;
+}
+
+.location:hover span {
+  height: 50px;
+  width:200px;
+  opacity:1;
+}
+
+
+
